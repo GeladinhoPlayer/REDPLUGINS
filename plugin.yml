@@ -1,0 +1,18 @@
+name: REDPLUGINS
+version: 1.0.0
+main: com.redplugins.core.RedPluginsCore
+api-version: 1.19
+author: RedPlugins
+description: Core plugin para gerenciar outros plugins RedPlugins
+website: https://redplugins.com
+
+commands:
+  redplugins:
+    description: Comando principal do RedPlugins Core
+    usage: /redplugins
+    permission: redplugins.admin
+    
+permissions:
+  redplugins.admin:
+    description: Permissão de administrador do RedPlugins
+    default: op

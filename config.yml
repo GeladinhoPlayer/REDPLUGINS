@@ -1,0 +1,31 @@
+# Configuração do RedPlugins Core
+core:
+  # Configurações de logging
+  logging:
+    level: INFO # DEBUG, INFO, WARNING, ERROR
+    log-plugin-connections: true
+    log-performance: true
+    
+  # Configurações de segurança
+  security:
+    validate-plugins: true
+    require-permission: false
+    allowed-authors: []
+    
+  # Configurações de performance
+  performance:
+    enable-metrics: true
+    cache-plugin-data: true
+    async-operations: true
+    
+  # Configurações de eventos
+  events:
+    enable-custom-events: true
+    broadcast-plugin-status: true
+    
+  # Mensagens personalizáveis
+  messages:
+    core-started: "§a[REDPLUGINS] Core iniciado! {count} plugin(s) conectado(s)"
+    plugin-connected: "§7[REDPLUGINS] Plugin {plugin} conectado ao core"
+    plugin-disconnected: "§7[REDPLUGINS] Plugin {plugin} desconectado do core"
+    core-shutdown: "§c[REDPLUGINS] Core desabilitado!"
